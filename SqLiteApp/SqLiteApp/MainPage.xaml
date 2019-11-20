@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SqLiteApp"
+             x:Class="SqLiteApp.MainPage">
+
+
+    <StackLayout MinimumHeightRequest="100" MinimumWidthRequest="300" Grid.Column="0" >
+
+        <Image Source="Logo1.png" WidthRequest="120" HeightRequest="200" Aspect="AspectFit" Margin="10,20,10,20"/>
+
+        <Entry x:Name="UserId"  Placeholder="Enter userid"   
+                           PlaceholderColor="Gray" HeightRequest="40" TextColor="Black"/>
+
+        <Entry x:Name="Password"  Placeholder="Enter Your Password"   
+                           PlaceholderColor="Gray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
+        <Button Text="Forgot password?" BackgroundColor="Transparent" BorderColor="Transparent" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" FontSize="Small" Clicked="forgot_Clicked"/>
+        <Button x:Name="Login" Text="Login" TextColor="White" Clicked="Login_clicked"  Padding ="10,10,10,10" FontAttributes="Bold"  BackgroundColor="#1ea593" FontSize="Large" 
+                HorizontalOptions="FillAndExpand"  />
+
+    </StackLayout>
+
+
+
+
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqLiteApp.Emp_Home">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--<StackLayout MinimumHeightRequest="100" MinimumWidthRequest="300" Grid.Column="0" >-->
+
+        <Image Source="Pic.png" WidthRequest="120" HeightRequest="200" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Margin="10,20,10,20"/>
+        <Label Text="Employee" FontSize="35" Grid.Row="0" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" TextColor="#1ea593" />
+        <Button Text="Employees Deatils" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593" BorderColor="Black" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="400" VerticalOptions="Center" FontSize="Medium" Clicked="Employee_Details_Clicked"/>
+        <Button Text="Leave Application" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593" BorderColor="Black" TextColor="White" HorizontalOptions="CenterAndExpand"  WidthRequest="400" VerticalOptions="Center" FontSize="Medium" Clicked="Leave_Application_Clicked"/>
+        <Button Text="Company News" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593" BorderColor="Black" TextColor="White" HorizontalOptions="CenterAndExpand"  WidthRequest="400" VerticalOptions="Center" FontSize="Medium" Clicked="Company_news_Clicked"/>
+        <Button Text="Company Policies" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593" BorderColor="Black" TextColor="White" HorizontalOptions="CenterAndExpand"  WidthRequest="400" VerticalOptions="Center" FontSize="Medium" Clicked="Company_policy_Clicked"/>
+
+
+
+
+
+
+    </Grid>
+
+</ContentPage>

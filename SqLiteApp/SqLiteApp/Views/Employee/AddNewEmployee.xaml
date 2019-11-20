@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqLiteApp.AddNewEmployee">
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView  HeightRequest="10"/>
+            <Label Text="New Employee Details" FontSize="Large" TextColor="#1ea593 " />
+            <Entry x:Name="Userid" Text="{Binding Userid}" Placeholder="Userid"   
+                           PlaceholderColor="Gray" HeightRequest="40"  TextColor="Black"/>
+
+            <Entry x:Name="First_Name" Text="{Binding First_Name}" Placeholder="First Name"   
+                           PlaceholderColor="Gray" HeightRequest="40"  TextColor="Black"/>
+            <Entry x:Name="Last_Name" Text="{Binding First_Name}" Placeholder="Last Name"   
+                           PlaceholderColor="Gray" HeightRequest="40"  TextColor="Black"/>
+
+            <Entry x:Name="Department" Text="{Binding Department}" Placeholder="Department"   
+                           PlaceholderColor="Gray" HeightRequest="40"  TextColor="Black"/>
+            <Entry x:Name="Contact_No" Text="{Binding Contact_No}" Placeholder=" Contact Number"   
+                           PlaceholderColor="Gray" HeightRequest="40"  TextColor="Black"/>
+
+            <Entry  x:Name="Password" Text="{Binding Password}" Placeholder="create Password"   
+                           PlaceholderColor="Gray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
+
+
+
+
+            <Button Text="OK" TextColor="Black" Clicked="Ok_clicked" FontAttributes="Bold" FontSize="Large" 
+                HorizontalOptions="FillAndExpand"  />
+            <Button Text="Show" TextColor="Black" Clicked="Show_Clicked" FontAttributes="Bold" FontSize="Large" 
+                HorizontalOptions="FillAndExpand"  />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

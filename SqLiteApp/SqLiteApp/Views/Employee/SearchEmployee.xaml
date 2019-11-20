@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqLiteApp.SearchEmployee">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--<StackLayout MinimumHeightRequest="100" MinimumWidthRequest="300" Grid.Column="0" >-->
+   
+        <Image Source="Pic.png" WidthRequest="120" HeightRequest="200" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Margin="10,20,10,20"/>
+        <Label x:Name="Emp_First_Name" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#1ea593"  TextColor="White"/>
+        <Label x:Name="EmP_Last_Name" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593"  TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="400" VerticalOptions="Center" FontSize="Medium" />
+        <Label x:Name="Emp_Department" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593" TextColor="White" HorizontalOptions="CenterAndExpand"  WidthRequest="400" VerticalOptions="Center" FontSize="Medium"/>
+        <Label x:Name="Emp_Phone_No" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593" TextColor="White" HorizontalOptions="CenterAndExpand"  WidthRequest="400" VerticalOptions="Center" FontSize="Medium" />
+   
+    </Grid>
+
+</ContentPage>

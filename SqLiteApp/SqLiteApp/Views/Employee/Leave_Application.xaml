@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqLiteApp.Leave_Application">
+    <StackLayout>
+
+        <Label Text="Leave Application" Grid.Row="0" FontSize="30" VerticalTextAlignment= "Center" TextDecorations="Underline" TextColor="#1ea593"  BackgroundColor="White" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="Leave_Heading " Text="{Binding Leave_Heading}" Placeholder="Leave Heading.."   
+                           PlaceholderColor="Gray" HeightRequest="40"  TextColor="Black"/>
+
+
+        <Entry x:Name="Leave_Reason" Text="{Binding Leave_Reason }" Placeholder="Reason for the application"   
+                           PlaceholderColor="Gray" HeightRequest="300"  TextColor="Black"/>
+
+
+        <Button Text="Send Application" Clicked="Send_clicked" BackgroundColor="#1ea593" TextColor="White" FontAttributes="Bold" FontSize="Large" 
+                HorizontalOptions="FillAndExpand"  />
+
+    </StackLayout>
+</ContentPage>

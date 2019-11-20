@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqLiteApp.Views.Admin.Leave_Display">
+    <StackLayout>
+    <Label x:Name="Leave_Heading" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#1ea593"  TextColor="White"/>
+    <Label x:Name="Leave_Reason" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#1ea593"  TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="400" VerticalOptions="Center" FontSize="Medium" />
+        <Button Text="Approve" Clicked="Approved_Clicked"/>
+        <Button Text="Reject" Clicked="Reject_Clicked"/>
+    </StackLayout>
+
+
+</ContentPage>
